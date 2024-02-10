@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import matplotlib
+matplotlib.use('Agg')
 
 # command line args
 import argparse
@@ -12,6 +14,7 @@ args = parser.parse_args()
 import os
 import json
 from collections import Counter,defaultdict
+import matplotlib.pyplot as plt
 
 # open the input path
 with open(args.input_path) as f:
@@ -22,7 +25,13 @@ if args.percent:
     for k in counts[args.key]:
         counts[args.key][k] /= counts['_all'][k]
 
+plt.xlabel(args.key)
+plt.ylabel("Count")
+
 # print the count values
-items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
+items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)[:10][::-1]
 for k,v in items:
     print(k,':',v)
+    plt.bar(k, v)
+
+plt.savefig(args.key + '.png')    
