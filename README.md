@@ -26,14 +26,32 @@ Created a shell script `run_maps.sh` to execute the `map.py` script on each file
 Developed `alternative_reduce.py` to create a line plot showing daily tweet counts for specified hashtags throughout the year.
 
 ### Task 5: Uploading to GitHub
-Committed all code and output files to a GitHub repository. Updated the `README.md` file with a project overview and inserted brief explanations along with the four generated PNG files.
+Committed all code and output files to a GitHub repository. Updated the `README.md` file with a project overview and inserted brief explanations along with the five generated PNG files.
 
-## Visualization
-1. `lang_hashtag_counts.png`: Bar graph displaying top 10 hashtags by language.
-<img src=#coronavirus.country.png width=100% />
-2. `country_hashtag_counts.png`: Bar graph showing top 10 hashtags by country.
-3. `alternative_reduce_lang.png`: Line plot illustrating daily tweet counts for specified hashtags by language.
-4. `alternative_reduce_country.png`: Line plot representing daily tweet counts for specified hashtags by country.
 
+## Visualizations
+
+1. `#coronavirus.country.png`: Bar graph displaying the top 10 languages of tweets including this hashtag by language.
+   
+   <img src="%23coronavirus.lang.png" width="100%" />
+
+2. `#coronavirus.lang.png`: Bar graph displaying the top 10 countries of tweets including this hashtag by language.
+   
+   <img src="%23coronavirus.country.png" width="100%" />
+   
+3. `#코로나바이러스.country.lang`: Bar graph displaying the top 10 languages of tweets including this hashtag by language.
+   
+   <img src="%23코로나바이러스.lang.png" width="100%" />
+   
+4. `#코로나바이러스.lang.png`: Bar graph displaying the top 10 countries of tweets including this hashtag by language.
+
+   <img src="%23코로나바이러스.country.png" width="100%" />
+
+5. `hashtag_counts.png`: Line plot of the frequency of a variety of hashtags and the dates of the frequency, all of 2020; therefore, the labels of the dates are illegible.
+
+   <img src="hashtag_counts.png" width="100%" />
+
+   
+   
 ## Conclusion
 This project demonstrates proficiency in handling large-scale datasets, multilingual text processing, and parallel computing using MapReduce. The visualizations provide insights into the distribution of coronavirus-related discussions across languages and countries on Twitter in 2020.
